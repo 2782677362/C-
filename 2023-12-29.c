@@ -195,3 +195,49 @@
 //	printf("%d\n", (*(int*)pb) - (*(int*)pa));
 //	return 0;
 //}
+
+//#include <stdio.h>
+//int main()
+//{
+//    int i, j;
+//    scanf("%d %d", &i, &j);
+//    for (int n = 0; n <= i; n++)
+//    {
+//        if (n % j != 0)
+//            printf("%d\n", n);
+//
+//    }
+//    return 0;
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//    int i = 0;
+//    int j = 0;
+//    scanf("%d %d", &i, &j);
+//    printf("%d\n", (i + j) % 8 + 1);
+//    return 0;
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//    int x = 0;
+//    int n = 0;
+//    scanf("%d %d", &x, &n);
+//   /* int day = x + n;
+//    while (day > 7)
+//    {
+//        day -= 7;
+//    }*/
+//
+//    int day = x + n % 7;
+//    if (day > 7)
+//    {
+//        day -= 7;
+//    }
+//    printf("%d\n", day);
+//
+//    return 0;
+//}
