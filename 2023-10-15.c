@@ -35,7 +35,7 @@
 //int main()
 //{
 //	int input = 0;
-//	printf("ÄãÒªºÃºÃÑ§Ï°Âğ£¿0/1\n");
+//	printf("ä½ è¦å¥½å¥½å­¦ä¹ å—ï¼Ÿ0/1\n");
 //	
 //	scanf("%d" , &input);
 //	if (input == 0)
@@ -163,7 +163,7 @@
 //int main()
 //{
 //	char password[20] = {0};
-//	printf("ÇëÊäÈëÃÜÂë:");
+//	printf("è¯·è¾“å…¥å¯†ç :");
 //	scanf("%s", &password);
 //	printf("%s\n",password);
 //	
@@ -173,7 +173,7 @@
 //		int ch = getchar();
 //	}
 //
-//    printf("ÇëÈ·ÈÏÃÜÂë(Y/N):");
+//    printf("è¯·ç¡®è®¤å¯†ç (Y/N):");
 //	int ret = getchar();
 //	if ('Y' == ret)
 //		printf("YES\n");
@@ -339,19 +339,19 @@
 //	int mid = 0;
 //	while(left <= right)
 //	{
-//		mid = (left + right) / 2;//Îª·ÀÖ¹Òç³ö£¬¿ÉĞ´³É mid = left + (right - left)/2;    ²»¿ÉĞ´³É mid = left/2 + right/2;
+//		mid = (left + right) / 2;//ä¸ºé˜²æ­¢æº¢å‡ºï¼Œå¯å†™æˆ mid = left + (right - left)/2;    ä¸å¯å†™æˆ mid = left/2 + right/2;
 //		if (arr[mid] > k)
 //			right = mid-1;
 //		else if (arr[mid] < k)
 //			left = mid+1;
 //		else
 //		{
-//			printf("ÕÒµ½ÁË£¬ÏÂ±êÊÇ%d\n", mid);
+//			printf("æ‰¾åˆ°äº†ï¼Œä¸‹æ ‡æ˜¯%d\n", mid);
 //			break;
 //		}
 //	}
 //	if (left > right)
-//		printf("Ã»ÕÒµ½");
+//		printf("æ²¡æ‰¾åˆ°");
 //	return 0;
 //}
 
@@ -392,10 +392,10 @@
 //	do 
 // {
 //	    printf("******************\n");
-//	    printf("***** ²Ë  µ¥ *****\n");
+//	    printf("***** èœ  å• *****\n");
 //		printf("***** play:1 *****\n");
 //		printf("***** exit:0 *****\n");
-//		printf("***** ÇëÊäÈë *****\n");
+//		printf("***** è¯·è¾“å…¥ *****\n");
 //		printf("******************\n");
 //		
 //		scanf("%d" ,&a);
@@ -405,7 +405,7 @@
 //			srand((unsigned)time(NULL));
 //			i = rand();
 //			i = i % 100 + 1;
-//			printf("¿ªÊ¼ÓÎÏ·!Çë¿ªÊ¼ÔÚ1-100ÖĞ²Â\n");
+//			printf("å¼€å§‹æ¸¸æˆ!è¯·å¼€å§‹åœ¨1-100ä¸­çŒœ\n");
 //			while (1)
 //			{
 //				scanf("%d", &a);
@@ -413,21 +413,21 @@
 //				{
 //					right = a - 1;
 //					if (left == right)
-//						printf("±È%dĞ¡Å¶£¬¾ÍÊ£%dÁË£¬»¹²Â²»¶ÔÂğ£¬ÎØÎØÎØ\n", a,left);
+//						printf("æ¯”%då°å“¦ï¼Œå°±å‰©%däº†ï¼Œè¿˜çŒœä¸å¯¹å—ï¼Œå‘œå‘œå‘œ\n", a,left);
 //					else
-//						printf("²Â´óÁË£¬ÇëÔÚ%d-%dÖĞ¼ÌĞø²Â\n", left, right);
+//						printf("çŒœå¤§äº†ï¼Œè¯·åœ¨%d-%dä¸­ç»§ç»­çŒœ\n", left, right);
 //				}
 //				else if (a < i)
 //				{
 //					left = a + 1;
 //					if (left == right)
-//						printf("±È%d´óÅ¶£¬¾ÍÊ£%dÁË£¬»¹²Â²»¶ÔÂğ£¬ÎØÎØÎØ\n", a,left);
+//						printf("æ¯”%då¤§å“¦ï¼Œå°±å‰©%däº†ï¼Œè¿˜çŒœä¸å¯¹å—ï¼Œå‘œå‘œå‘œ\n", a,left);
 //					else
-//						printf("²ÂĞ¡ÁË£¬ÇëÔÚ%d-%dÖĞ¼ÌĞø²Â\n", left, right);
+//						printf("çŒœå°äº†ï¼Œè¯·åœ¨%d-%dä¸­ç»§ç»­çŒœ\n", left, right);
 //				}
 //				else
 //				{
-//					printf("\n¹§Ï²Äú,²Â¶ÔÁË!\n\n");
+//					printf("\næ­å–œæ‚¨,çŒœå¯¹äº†!\n\n");
 //					left = 1;
 //					right = 100;
 //					break;
@@ -436,11 +436,11 @@
 //		}
 //		else if (a == 0)
 //		{
-//			printf("½áÊøÓÎÏ·\n");
+//			printf("ç»“æŸæ¸¸æˆ\n");
 //			break;
 //		}
 //		else
-//			printf("ÊäÈë´íÎó£¬ÇëÖØĞÂÊäÈë\n");
+//			printf("è¾“å…¥é”™è¯¯ï¼Œè¯·é‡æ–°è¾“å…¥\n");
 //	} while (a);
 //
 //	return 0;
@@ -470,9 +470,9 @@
 //	int sz = sizeof(arr) / sizeof(arr[0]);
 //	int ret = FX(arr, k, sz);
 //	if (ret == -1)
-//		printf("ÕÒ²»µ½\n");
+//		printf("æ‰¾ä¸åˆ°\n");
 //	else
-//		printf("ÕÒµ½ÁË£¬ÏÂ±êÊÇ:%d\n", ret);
+//		printf("æ‰¾åˆ°äº†ï¼Œä¸‹æ ‡æ˜¯:%d\n", ret);
 //	return 0;
 //}
 
@@ -828,7 +828,7 @@
 //    {
 //        sum += i * i;
 //    }
-//    printf("1µ½100ÖĞËùÓĞÅ¼ÊıµÄÆ½·½ºÍÎª: %d\n", sum);
+//    printf("1åˆ°100ä¸­æ‰€æœ‰å¶æ•°çš„å¹³æ–¹å’Œä¸º: %d\n", sum);
 //    return 0;
 //}
 
@@ -866,7 +866,7 @@
 //
 //int main()
 //{
-//	int arr[10] = { 5,7,3,6,4,5,9,2,1,9 };//10¸öÊı
+//	int arr[10] = { 5,7,3,6,4,5,9,2,1,9 };//10ä¸ªæ•°
 //	int i = 0;
 //	int max = arr[1];
 //	
@@ -909,19 +909,19 @@
 //	switch (input)
 //	{
 //	case'A':
-//		printf("90·ÖÒÔÉÏ\n");
+//		printf("90åˆ†ä»¥ä¸Š\n");
 //		break;
 //	case'B':
-//		printf("80-89·Ö\n");
+//		printf("80-89åˆ†\n");
 //		break;
 //	case'C':
-//		printf("70-79·Ö\n");
+//		printf("70-79åˆ†\n");
 //		break;
 //	case'D':
-//		printf("60-69·Ö\n");
+//		printf("60-69åˆ†\n");
 //		break;
 //	case'E':
-//		printf("60·ÖÒÔÏÂ\n");
+//		printf("60åˆ†ä»¥ä¸‹\n");
 //		break;
 //	}
 //	return 0;
@@ -934,7 +934,7 @@
 //
 //int main()
 //{
-//	int arr[4][4] = { 5,6,7,8,5,6,7,8,5,6,7,8,5,6,7,8 };//Éè¸Ã4X4¾ØÕóÎª  5 6 7 8 
+//	int arr[4][4] = { 5,6,7,8,5,6,7,8,5,6,7,8,5,6,7,8 };//è®¾è¯¥4X4çŸ©é˜µä¸º  5 6 7 8 
 //														//				 5 6 7 8
 //														//				 5 6 7 8
 //														//				 5 6 7 8
@@ -947,13 +947,13 @@
 
 //#include <stdio.h>
 //
-//#define IN 1  /* ÔÚµ¥´ÊÄÚ */
-//#define OUT 0 /* ÔÚµ¥´ÊÍâ */
+//#define IN 1  /* åœ¨å•è¯å†… */
+//#define OUT 0 /* åœ¨å•è¯å¤– */
 
 //int main() 
 //{
   //int c, nl,    nw,     nc,      state;
-// //////   //ĞĞÊı//µ¥´ÊÊı//×Ö·ûÊı//¶ÁÈ¡Êı¾İµÄÎ»ÖÃ£¨×´Ì¬£©
+// //////   //è¡Œæ•°//å•è¯æ•°//å­—ç¬¦æ•°//è¯»å–æ•°æ®çš„ä½ç½®ï¼ˆçŠ¶æ€ï¼‰
 //    state = OUT;
 //    nl = nw = nc = 0;
 //    while ((c = getchar()) != EOF) 
@@ -980,8 +980,8 @@
 
 //#include <stdio.h>
 //
-//#define IN 1  /* ÔÚµ¥´ÊÄÚ */
-//#define OUT 0 /* ÔÚµ¥´ÊÍâ */
+//#define IN 1  /* åœ¨å•è¯å†… */
+//#define OUT 0 /* åœ¨å•è¯å¤– */
 //int main()
 //{
 //	int c = 0;
@@ -1155,7 +1155,7 @@
 //    fp = fopen("f2.txt", "w");
 //    if (fp == NULL)
 //    {
-//        printf("ÎÄ¼şÎŞ·¨´ò¿ª");
+//        printf("æ–‡ä»¶æ— æ³•æ‰“å¼€");
 //        return 0;
 //    }
 //
