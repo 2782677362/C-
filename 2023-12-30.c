@@ -30,8 +30,8 @@
 
 
 
-//Å£Å£¿Ú¿ÊÁË£¬ÒªºÈ10ÉıË®²ÅÄÜ½â¿Ê£¬µ«ÏÖÔÚÖ»ÓĞÒ»¸öÉî h ÀåÃ×£¬µ×Ãæ°ë¾¶ÊÇ r ÀåÃ×µÄË®±­£¬Å£Å£×îÉÙÒªºÈ¶àÉÙ±­Ë®²ÅÄÜ½â¿Ê¡£
-//¦Ğ  È¡ 3.14 £¬
+//ç‰›ç‰›å£æ¸´äº†ï¼Œè¦å–10å‡æ°´æ‰èƒ½è§£æ¸´ï¼Œä½†ç°åœ¨åªæœ‰ä¸€ä¸ªæ·± h å˜ç±³ï¼Œåº•é¢åŠå¾„æ˜¯ r å˜ç±³çš„æ°´æ¯ï¼Œç‰›ç‰›æœ€å°‘è¦å–å¤šå°‘æ¯æ°´æ‰èƒ½è§£æ¸´ã€‚
+//Ï€  å– 3.14 ï¼Œ
 //
 //#include <stdio.h>
 //
@@ -171,3 +171,41 @@
 //
 //    return 0;
 //}
+
+
+
+
+int main() {
+    int a,b,c,x,y,z;
+    scanf("%d %d %d %d %d %d",&a,&b,&c,&x,&y,&z);
+    int m,n;
+    char result1[20];
+    char result2[20];
+    char str_a[20], str_b[20], str_c[20];
+
+    sprintf(str_a, "%d", a);
+    sprintf(str_b, "%d", b);
+    sprintf(str_c, "%d", c);
+
+    strcpy(result1, str_a);
+    strcat(result1, str_b);
+    strcat(result1, str_c);
+    
+    sprintf(str_a, "%d", x);
+    sprintf(str_b, "%d", y);
+    sprintf(str_c, "%d", z);
+
+    strcpy(result2, str_a);
+    strcat(result2, str_b);
+    strcat(result2, str_c);
+    
+    m = atoi(result1);
+    n = atoi(result2);
+
+    if(m<=n)
+    printf("yes");
+    else
+     printf("no");
+
+    return 0;
+}
