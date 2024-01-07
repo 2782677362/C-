@@ -6,7 +6,6 @@ int main()
 {
 	int input = 0;
 	InitContact(&con);
-	int peo = 0;
 	do
 	{
 		menu();
@@ -32,10 +31,10 @@ int main()
 			SortContact(&con);
 			break;
 		case 0:
-			printf("�ر�ͨѶ¼\n");
+			printf("¹Ø±ÕÍ¨Ñ¶Â¼\n");
 			break;
 		default:
-			printf("�������\n");
+			printf("ÊäÈë´íÎó\n");
 			break;
 		}
 	} 
